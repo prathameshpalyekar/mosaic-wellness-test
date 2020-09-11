@@ -5,17 +5,27 @@ export const getDataFromServer = () => {
       title: 'To Do',
       type: 'action-items',
       items: [{
-        image: '../static/images/reading/blog1.jpg',
-        name: 'Hair Care 101',
-        index: '03'
+        completed: true,
+        title: 'Hair Appointment',
+        subtitle: 'with Dr Shobhita Anand',
+        time: 'Today, 3:30 PM'
       },{
-        image: '../static/images/reading/blog2.jpg',
-        name: 'How to use Niacin',
-        index: '02'
+        completed: false,
+        title: 'Eat tablet - Bromide',
+        subtitle: 'Follow up on your regime',
+        time: 'Today, After Lunch'
       },{
-        image: '../static/images/reading/blog3.jpeg',
-        name: 'Effects of Minoxidial',
-        index: '01'
+        completed: true,
+        title: 'Wash Hair',
+        subtitle: 'Use your shampoo',
+        time: 'Today, Morning Bath',
+        onGoing: true,
+      }, {
+        completed: true,
+        title: 'Moisturize',
+        subtitle: 'User your moisturiser',
+        time: 'Before Bedtime, 26th June',
+        isMissed: true,
       }]
     },
     read: {

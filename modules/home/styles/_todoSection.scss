@@ -1,0 +1,60 @@
+.to-do-item-container {
+  position: relative;
+  height: 100%;
+  .to-do-item {
+    display: flex;
+    background-color: white;
+    box-shadow: 5px 10px 15px #afafaf;
+    height: 100%;
+    .details {
+      padding: 1rem;
+      flex: 1;
+      .title {
+        font-size: 0.95rem;
+        font-weight: bold;
+      }
+      .subtitle {
+        font-size: 0.8rem;
+        color: gray;
+        margin-bottom: 0.5rem;
+      }
+      .time {
+        font-size: 0.75rem;
+        font-stretch: condensed;
+        color: red;
+        &.onGoing {
+          color: green;
+        }
+      }
+    }
+    .action-container {
+      width: 33%;
+      background-image: linear-gradient(to right, #ddfbd0 , #a8f7fc);
+      text-align: center;
+      .action {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  .missed-warning {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -25px;
+    .content {
+      background-color: #7b3809;
+      color: white;
+      width: 90%;
+      margin: auto;
+      line-height: 0.9rem;
+      padding: 0.4rem;
+    }
+  }
+}
+
+.to-do-item-column {
+  margin-bottom: 1rem;
+}

@@ -13,10 +13,7 @@ const componentMap = {
 
 class Index extends Component {
   state = {
-    activeTab: 'read',
-  }
-
-  componentDidMount() {
+    activeTab: 'todo',
   }
 
   switchTab = (item) => {
@@ -48,7 +45,6 @@ class Index extends Component {
             const tabClass = cx('tab-cell', {
               'active': item.id === activeTab,
             });
-            console.log(item.id, tabClass)
             return (
               <Col key={index}>
                 <div className={tabClass} onClick={this.switchTab.bind(this, item)}>
