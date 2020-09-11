@@ -28,7 +28,7 @@ export default class Layout extends Component {
         </Head>
         <Header/>
         {this.props.children}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
