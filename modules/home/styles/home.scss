@@ -1,1 +1,21 @@
 @import './readSection';
+
+.home-page {
+  .heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  .tab-cell-container {
+    margin-bottom: 1rem;
+    .tab-cell {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.5rem;
+      &.active {
+        border: 3px solid white;
+      }
+    }
+  }
+}

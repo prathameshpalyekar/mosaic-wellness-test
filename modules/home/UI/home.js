@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Row, Col, Button, Container } from 'reactstrap';
-import { withRouter } from 'next/router';
+import cx from 'classnames';
 import ReadSection from './readSection';
 import TodoSection from './todoSection';
 import '../styles/home.scss';
@@ -40,18 +40,23 @@ class Index extends Component {
       <Container className="home-page">
         <Row>
           <Col sm="12">
-            Action Items
+            <div className="heading">Action Items</div>
           </Col>
         </Row>
-        <Row>
-          {items.map((item, index) => (
-            <Col key={index}>
-              <div onClick={this.switchTab.bind(this, item)}>
-                {item.title}
-              </div>
-              
-            </Col>
-          ))}
+        <Row className="tab-cell-container">
+          {items.map((item, index) => {
+            const tabClass = cx('tab-cell', {
+              'active': item.id === activeTab,
+            });
+            console.log(item.id, tabClass)
+            return (
+              <Col key={index}>
+                <div className={tabClass} onClick={this.switchTab.bind(this, item)}>
+                  {item.title}
+                </div>
+              </Col>
+            )
+          })}
         </Row>
         <Row>
           <ActiveSection data={sectionData} />
