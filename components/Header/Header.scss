@@ -4,21 +4,9 @@
   margin-bottom: 0;
   padding: 0.5rem 1rem;
   .header-link {
-    color: #000 !important;
+    color: #FFF !important;
     text-decoration: none;
     font-weight: bold;
-  }
-  .checkout-button {
-    display: inline-block;
-    padding: 0.5rem 2rem;
-    background-color: #e23530;
-    text-decoration: none;
-    color: white;
-    border-radius: 0.25rem;
-    &.disabled {
-      cursor: not-allowed;
-      background-color: #fb8a87;
-    }
   }
   #home {
     color: #e23530 !important;
@@ -37,33 +25,13 @@
       outline: none;
     }
   }
-  .dropdown-hover-menu-container {
-    flex-wrap: wrap;
-    display: flex;
-    max-height: 200px;
-    flex-direction: column;
-    .dropdown-hover-menu {
-      padding: 0.5rem 1rem;
-      min-width: 15rem;
-      .dropdown-menu-item {
-        color: black;
-        text-decoration: none;
-        text-transform: capitalize;
-        font-weight: lighter;
-        font-size: 14px;
-        &:hover {
-          font-weight: bold;
-        }
-      }
-    }
-  }
   .menu {
     position: relative;
     padding: 1rem;
     min-width: 5rem;
     .link {
       cursor: pointer;
-      color: black;
+      color: white;
       text-decoration: none;
       font-weight: normal;
       font-size: 14px;
@@ -75,42 +43,6 @@
       &.active {
         border-bottom: 3px solid #e23530;
       }
-    }
-  }
-  .login-section {
-    .login, .signup {
-      padding: 1rem;
-      color: white;
-      font-weight: lighter;
-      text-transform: uppercase;
-      font-size: 14px;
-      cursor: pointer;
-    }
-    .signup {
-      .signup-button {
-        padding: 0.5rem 1rem;
-        border: 1px solid white;
-      }
-    }
-  }
-  .account-section {
-    .account {
-      display: flex;
-      padding: 0.7rem 0;
-      cursor: pointer;
-      .label {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: white;
-        padding-right: 1rem;
-        font-weight: lighter;
-        font-size: 14px;
-      }
-    }
-    .account-menu {
-      display: flex;
-      text-decoration: none;
     }
   }
 }
@@ -128,10 +60,8 @@
   transform: translate3d(0%, 0, 0);
   .mobile-menu {
     border-bottom: 0.5px solid #999;
-    .logo {
-      font-size: 1.75rem;
-      padding: 1.25rem 1rem;
-      display: block;
+    .logo-image {
+      height: 2rem;
       cursor: pointer;
     }
     .link {

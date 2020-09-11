@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Row, Col, Button, Container } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import cx from 'classnames';
 import ReadSection from './readSection';
 import TodoSection from './todoSection';
