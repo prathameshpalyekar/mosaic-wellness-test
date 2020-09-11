@@ -1,0 +1,11 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  .carousel-control-prev, .carousel-control-next {
+    position: relative !important;
+    width: 10% !important;
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}

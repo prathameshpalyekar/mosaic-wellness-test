@@ -1,0 +1,205 @@
+.header {
+  background-color: #efefef!important;
+  border: none!important;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+  .header-link {
+    color: #000 !important;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .checkout-button {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #e23530;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.25rem;
+    &.disabled {
+      cursor: not-allowed;
+      background-color: #fb8a87;
+    }
+  }
+  #home {
+    color: #e23530 !important;
+    .logo-image {
+      height: 3rem;
+      padding-right: 1rem;
+    }
+  }
+  .logo {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .navbar-toggler {
+    border: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  .dropdown-hover-menu-container {
+    flex-wrap: wrap;
+    display: flex;
+    max-height: 200px;
+    flex-direction: column;
+    .dropdown-hover-menu {
+      padding: 0.5rem 1rem;
+      min-width: 15rem;
+      .dropdown-menu-item {
+        color: black;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: lighter;
+        font-size: 14px;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .menu {
+    position: relative;
+    padding: 1rem;
+    min-width: 5rem;
+    .link {
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 14px;
+      text-transform: capitalize;
+      &:hover {
+        border-bottom: 3px solid #e23530;
+        font-weight: bold;
+      }
+      &.active {
+        border-bottom: 3px solid #e23530;
+      }
+    }
+  }
+  .login-section {
+    .login, .signup {
+      padding: 1rem;
+      color: white;
+      font-weight: lighter;
+      text-transform: uppercase;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .signup {
+      .signup-button {
+        padding: 0.5rem 1rem;
+        border: 1px solid white;
+      }
+    }
+  }
+  .account-section {
+    .account {
+      display: flex;
+      padding: 0.7rem 0;
+      cursor: pointer;
+      .label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-right: 1rem;
+        font-weight: lighter;
+        font-size: 14px;
+      }
+    }
+    .account-menu {
+      display: flex;
+      text-decoration: none;
+    }
+  }
+}
+
+.mobile-menu-modal {
+  position: fixed;
+  margin: 0 !important;
+  width: 85% !important;
+  height: 100%;
+  left: -85%;
+  background-color: #3f3f3f;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  .mobile-menu {
+    border-bottom: 0.5px solid #999;
+    .logo {
+      font-size: 1.75rem;
+      padding: 1.25rem 1rem;
+      display: block;
+      cursor: pointer;
+    }
+    .link {
+      color: white;
+      text-decoration: none;
+      font-weight: lighter;
+      font-size: 14px;
+      display: block;
+      padding: 1.25rem 1rem;
+    }
+    .account-section {
+      .account {
+        text-align: center;
+        .account-menu {
+          color: white;
+          text-decoration: none;
+          padding: 1.05rem 1rem;
+          display: block;
+          .label {
+            margin-right: 5px;
+            font-weight: lighter;
+          }
+        }
+      }
+    }
+    .login-section {
+      display: flex;
+      flex-direction: row;
+      .login, .signup {
+        flex: 1;
+        .login-button, .signup-button {
+          display: block;
+          color: white;
+          width: 100%;
+          padding: 1.05rem 1rem;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: lighter;
+          cursor: pointer;
+        }
+        .login-button {
+          border-right: 0.5px solid #999;
+        }
+      }
+    }
+  }
+  .modal-content {
+    background-color: #3f3f3f;
+  }
+  .modal-body {
+    padding: 0;
+    background-color: transparent;
+    .close {
+      color: white;
+      text-shadow: none;
+      top: 15px !important;
+      right: 15px !important;
+      opacity: 1;
+      font-size: 40px;
+      z-index: 10;
+    }
+  }
+  
+  .show > &.modal-dialog { 
+    left: 0px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out !important;
+		-moz-transition: opacity 0.3s linear, left 0.3s ease-out !important;
+		-o-transition: opacity 0.3s linear, left 0.3s ease-out !important;
+		transition: opacity 0.3s linear, left 0.3s ease-out !important;
+  }
+}

@@ -1,0 +1,54 @@
+$gold: #e0a867;
+
+.modal-component {
+  max-width: 950px !important;
+  margin-top: 5rem !important;
+  .modal-content {
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+    .modal-body {
+      position: relative;
+      .modal-body-close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        z-index: 10;
+        color: white;
+        opacity: 1;
+      }
+    }
+  }
+
+  .modal-header {
+    padding: 15px;
+    color: black;
+    display: block;
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    .submit {
+      color: white;
+      background-color: $gold;
+      border-radius: 0;
+      border: 0;
+    }
+    .cancel {
+      background-color: white;
+      color: black;
+      border: 0;
+      border-radius: 0;
+    }
+  }
+}

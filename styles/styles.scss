@@ -1,0 +1,35 @@
+@import '../assets/icons/style.css';
+
+@import './variables';
+
+$font-size: 50px;
+body {
+  font-size: $font-size;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ibmplex-font {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+}
+
+.page-heading {
+  background: linear-gradient(to right, #e0a867, #fdd7ac);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.3px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.main-container {
+  margin: 0 auto !important;
+  padding: 0 auto !important;
+  width: 100% !important;
+}

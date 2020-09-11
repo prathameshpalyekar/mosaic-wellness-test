@@ -1,0 +1,42 @@
+.form-group {
+  margin: 1rem 0 0;
+  &.horizontal {
+    .form-label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 0.5rem;
+      margin-bottom: 0;
+      border-radius: 0;
+      border: 0;
+    }
+  }
+  .form-label {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #3f3f3f;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .form-feedback {
+    font-size: 15px;
+    display: block;
+  }
+}
+  
+.form-select {
+  border-radius: 0 !important;
+  font-weight: lighter;
+  &::placeholder {
+    color: #ced4da;
+    font-weight: lighter;
+  }
+  .react-select__control {
+    border-radius: 0;
+  }
+  .react-select__menu {
+    border-radius: 0;
+    color: #3f3f3f;
+    z-index: 10;
+  }
+}

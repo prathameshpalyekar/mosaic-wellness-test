@@ -1,0 +1,18 @@
+.avatar-section {
+  .user-icon {
+    color: white;
+    font-size: 2rem;
+  }
+  .avatar {
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #e0a867;
+    border-radius: 50%;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter;
+  }
+}

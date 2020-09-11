@@ -1,0 +1,29 @@
+.chart-container {
+  height: 100%;
+  width: 100%; 
+}
+
+.custom-pie-chart {
+  height: 100%;
+  width: 100%;
+}
+
+.circular-progress {
+  .circle-background {
+    stroke: rgba(255, 255, 255, 0.2);
+    fill: none;
+  }
+
+  .circle-progress {
+    stroke: rgb(224, 168, 103);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+
+  .circle-text {
+    fill: #e0a867;
+    font-size: 23px;
+    font-weight: 300;
+  }
+}

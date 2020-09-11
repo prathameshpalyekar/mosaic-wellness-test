@@ -1,0 +1,33 @@
+.footer {
+  background-color: #e23530;
+  padding: 2rem 2rem 0.5rem 2rem;
+  .footer-container {
+    width: 75%;
+  }
+  .footer-link {
+    margin-bottom: 15px;
+    cursor: pointer;
+    .link-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .link {
+      color: white;
+      text-decoration: none;
+      font-weight: lighter;
+      padding-bottom: 0.25rem;
+      font-size: 15px;
+      &:hover {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+  .copyrights {
+    font-size: 0.94rem;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 1rem;
+    color:white;
+  }
+}

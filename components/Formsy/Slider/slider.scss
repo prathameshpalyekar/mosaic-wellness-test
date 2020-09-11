@@ -1,0 +1,45 @@
+.slider-form-group {
+  .form-label {
+    .heading {
+      font-size: 18px;
+      color: black;
+      padding-right: 0.5rem; 
+      font-weight: 300;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #989898;
+      font-weight: 300;
+    }
+  }
+  .range-container {
+    display: flex;
+    margin-top: 1rem;
+    .center-value {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  .value {
+    font-size: 20px;
+    padding: 0.5rem;
+  }
+  .form-slider {
+    .rc-slider-rail {
+      background-color: #fff;
+      border-radius: unset;
+      height: 7px;
+    }
+    .rc-slider-track {
+      background-color: #e0a867;
+      border-radius: unset;
+      height: 7px;
+    }
+    .rc-slider-handle {
+      border: unset;
+      box-shadow: unset;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

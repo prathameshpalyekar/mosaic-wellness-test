@@ -1,0 +1,160 @@
+.tracker-container {
+  background-color: #1b3066;
+  padding: 2rem;
+  height: 100%;
+  .step-container {
+    display: flex;
+    .step-icon-section {
+      display: flex;
+      flex-direction: column;
+      .icon {
+        background-color: #e0a867;
+        color: #1b3066;
+        font-size: 18px;
+        padding: 2px 3px;
+        border-radius: 50%;
+        &.icon-clock {
+          background-color: #71809f;
+        }
+      }
+      .step-progress-bar {
+        flex: 1;
+        background-color: white;
+        min-height: 4rem;
+        height: 100%;
+        width: 1rem;
+        margin: 0.5rem auto;
+
+        &.step-complete {
+          background-image: linear-gradient(270deg,#fdd7ac,#e0a867)
+        }
+        &.step-current {
+          background-color: hsla(0,0%,100%,.08);
+        }
+        &.step-incomplete {
+          background-color: hsla(0,0%,100%,.08);
+        }
+        &.last-item {
+          display: none;
+        }
+      }
+    }
+    .step-info {
+      flex: 1;
+      margin: 0 1rem;
+    }
+    
+    .title {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      &.step-complete {
+        color: white;
+      }
+      &.step-current {
+        color: rgb(224, 168, 103);
+      }
+      &.step-incomplete {
+        color: rgb(140, 157, 199);
+      }
+    }
+    .description {
+      font-size: 13px;
+      font-weight: lighter;
+      padding-right: 0.5rem;
+      &.step-complete {
+        color: hsla(0, 0%, 100%, 0.8);
+      }
+      &.step-current {
+        color: white;
+      }
+      &.step-incomplete {
+        color: #8c9dc7;
+      }
+    }
+  }
+}
+.mobile-tracker-container {
+  .mobile-step {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    .mobile-step-container {
+      background-color: #1a1a1a;
+      display: flex;
+      padding: 1rem 2rem;
+      flex-direction: column;
+      .mobile-step-section {
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        .icon {
+          height: 1.5rem;
+          position: relative;
+          top: 1rem;
+          background-color: #e0a867;
+          color: #1b3066;
+          font-size: 18px;
+          padding: 2px 3px;
+          border-radius: 50%;
+          &.icon-clock {
+            background-color: #71809f;
+            font-size: 18px;
+          }
+        }
+        .title {
+          text-transform: uppercase;
+          font-size: 14px;
+          display: inline;
+          font-weight: 500;
+          margin: 1rem;
+          text-align: left;
+          flex: 1;
+          &.step-complete {
+            color: white;
+          }
+          &.step-current {
+            color: rgb(224, 168, 103);
+          }
+          &.step-incomplete {
+            color: rgb(140, 157, 199);
+          }
+        }
+      }
+      .description {
+        font-size: 13px;
+        padding-right: 0.5rem;
+        &.step-complete {
+          color: hsla(0, 0%, 100%, 0.8);
+        }
+        &.step-current {
+          color: white;
+        }
+        &.step-incomplete {
+          color: #8c9dc7;
+        }
+      }
+    }
+    .step-progress-bar {
+      flex: 1;
+      background-color: white;
+      min-height: 4rem;
+      height: 100%;
+      width: 2px;
+      margin: 0rem auto;
+
+      &.step-complete {
+        background-image: linear-gradient(270deg,#fdd7ac,#e0a867)
+      }
+      &.step-current {
+        background-color: hsla(0,0%,100%,.08);
+      }
+      &.step-incomplete {
+        background-color: hsla(0,0%,100%,.08);
+      }
+      &.last-item {
+        display: none;
+      }
+    }   
+  }
+}
